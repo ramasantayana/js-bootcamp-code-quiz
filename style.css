@@ -3,3 +3,9 @@
     top: 7px;
     left: 7px;
 }
+
+.timer {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
