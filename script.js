@@ -30,3 +30,10 @@ let questions = [
         correctAnswer: "A4",
     },
 ];
+
+let startBtn = document.getElementById('begin');
+startBtn.addEventListener("click", handleStart);
+
+function handleStart (){
+    console.log ("start button clicked")
+}
