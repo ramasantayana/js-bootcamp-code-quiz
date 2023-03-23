@@ -1,1 +1,1 @@
-# js-bootcamp-code-quiz-
+# js-bootcamp-code-quiz
