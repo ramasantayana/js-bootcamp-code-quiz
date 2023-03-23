@@ -9,3 +9,16 @@
     top: 7px;
     right: 7px;
 }
+
+.wrapper {
+    margin: 90px auto 0 auto;
+    max-width: 580px;
+}
+
+.hide {
+    display: none;
+}
+
+.begin {
+    text-align: center;
+}
