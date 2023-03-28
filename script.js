@@ -33,7 +33,17 @@ let questions = [
 
 let startBtn = document.getElementById('begin');
 startBtn.addEventListener("click", handleStart);
+let timerId;
+let timeRemaining = 120;
+let timerEl = document.getElementById("timer");
 
 function handleStart (){
-    console.log ("start button clicked")
+    console.log ("start button clicked");
+    timerId = setInterval (handleOneSecTimeOut, 1000);
+    timerEl.textContent = timeRemaining; 
+}   
+
+function handleOneSecTimeOut (){
+    timeRemaining--; 
+    timerEl.textContent = timeRemaining;
 }
