@@ -22,3 +22,8 @@
 .begin {
     text-align: center;
 }
+#questions-div {
+    background-color: lightcyan;
+    color:black;
+    text-align: center;
+}

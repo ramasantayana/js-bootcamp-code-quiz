@@ -48,7 +48,7 @@ function handleStart (){
     timerEl.textContent = timeRemaining; 
     
     beginDivEl.setAttribute("class", "hide");
-    questionsDivEl.removeAttribute("hide");
+    questionsDivEl.removeAttribute("class");
     showQuestion ();
 }   
 
@@ -58,5 +58,8 @@ function handleOneSecTimeOut (){
 } 
 
 function showQuestion (){
-
+    questionEl.textContent = questions[index].question;
+    console.log(questionEl);
+    console.log(questionEl.textContent);
+    console.log(questions[index].question);
 }
