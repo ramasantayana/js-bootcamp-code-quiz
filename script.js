@@ -36,14 +36,23 @@ startBtn.addEventListener("click", handleStart);
 let timerId;
 let timeRemaining = 120;
 let timerEl = document.getElementById("timer");
+let index = 0;
+let questionsDivEl = document.getElementById("questions-div");
+let questionEl = document.getElementById("question");
+let ansChoicesEl = document.getElementById("ans-choices")
 
 function handleStart (){
     console.log ("start button clicked");
     timerId = setInterval (handleOneSecTimeOut, 1000);
     timerEl.textContent = timeRemaining; 
+    showQuestion ();
 }   
 
 function handleOneSecTimeOut (){
     timeRemaining--; 
     timerEl.textContent = timeRemaining;
+} 
+
+function showQuestion (){
+    
 }
