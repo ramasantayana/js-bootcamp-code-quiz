@@ -39,8 +39,9 @@ let timerEl = document.getElementById("timer");
 let index = 0;
 let questionsDivEl = document.getElementById("questions-div");
 let questionEl = document.getElementById("question");
-let ansChoicesEl = document.getElementById("ans-choices")
-let beginDivEl = document.getElementById("begin-div")
+let ansChoicesEl = document.getElementById("ans-choices");
+let beginDivEl = document.getElementById("begin-div");
+let currentQuestion= questions[index];
 
 function handleStart (){
     console.log ("start button clicked");
@@ -58,8 +59,20 @@ function handleOneSecTimeOut (){
 } 
 
 function showQuestion (){
-    questionEl.textContent = questions[index].question;
+    questionEl.textContent = currentQuestion.question;
     console.log(questionEl);
     console.log(questionEl.textContent);
     console.log(questions[index].question);
+
+    ansChoicesEl.innerHTML = '';
+
+    for (let i=0; i <currentQuestion.ansChoices.length; i++ ) {
+        let choiceBtn = document.createElement('button');
+        let choice = currentQuestion.ansChoices[i];
+
+        choiceBtn.setAttribute('class','ans-choice');
+        choiceBtn.setAttribute('value',choice);
+        choiceBtn.textContent = i + 1 + '.' + choice;
+        ansChoicesEl.appendChild(choiceBtn);
+    }
 }
