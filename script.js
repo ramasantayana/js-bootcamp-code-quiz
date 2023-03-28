@@ -40,11 +40,15 @@ let index = 0;
 let questionsDivEl = document.getElementById("questions-div");
 let questionEl = document.getElementById("question");
 let ansChoicesEl = document.getElementById("ans-choices")
+let beginDivEl = document.getElementById("begin-div")
 
 function handleStart (){
     console.log ("start button clicked");
     timerId = setInterval (handleOneSecTimeOut, 1000);
     timerEl.textContent = timeRemaining; 
+    
+    beginDivEl.setAttribute("class", "hide");
+    questionsDivEl.removeAttribute("hide");
     showQuestion ();
 }   
 
@@ -54,5 +58,5 @@ function handleOneSecTimeOut (){
 } 
 
 function showQuestion (){
-    
+
 }
