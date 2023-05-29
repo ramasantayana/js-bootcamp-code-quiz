@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="hs"> <a href="hs.html" target="_blank" rel="noopener noreferrer">View High Scores</a> </div>
+    <div class="hs" style="cursor: pointer;" onclick="showHighScore()"> <a rel="noopener noreferrer">View High Scores</a> </div>
 
-    <div class="timer">Time: <span id="timer">120</span> </div>
+    <div class="timer">Time: <span id="timer">75</span> </div>
 
     <div class="wrapper">
         <div id="begin-div" class="begin">
@@ -29,7 +29,23 @@
             <h2 id="question"></h2>
           
             <div id="ans-choices" class="ans-choices"></div>
-          </div>
+            <div id="prev-ans"> </div>
+        </div>
+
+        <div id="high-score-div" class="hide" >
+            <h1>High Score</h1> 
+            <div class="high-score">
+                <h3>Rama : 34</h3>
+            </div>
+            <button onclick="showHome()"> back to home</button>
+        </div>
+
+        <div id="end-div" class="hide">
+            <h1>Game End</h1>
+            <h3>you score is <span id="myscore">22</span></h3>
+            <input id="myname" placeholder="enter you name">
+            <button onclick="saveInfo()">submit</button>
+        </div>
     </div>
 
     <script src="script.js"></script>

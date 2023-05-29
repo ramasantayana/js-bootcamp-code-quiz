@@ -18,8 +18,7 @@
 .hide {
     display: none;
 }
-
-.begin {
+body {
     text-align: center;
 }
 #questions-div {
