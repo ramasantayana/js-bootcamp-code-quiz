@@ -29,6 +29,26 @@ let questions = [
         ansChoices: ["A1", "A2", "A3", "A4"],
         correctAnswer: "A4",
     },
+    {
+        question: "Q7", 
+        ansChoices: ["A1", "A2", "A3", "A4"],
+        correctAnswer: "A4",
+    },
+    {
+        question: "Q8", 
+        ansChoices: ["A1", "A2", "A3", "A4"],
+        correctAnswer: "A4",
+    },
+    {
+        question: "Q9", 
+        ansChoices: ["A1", "A2", "A3", "A4"],
+        correctAnswer: "A4",
+    },
+    {
+        question: "Q10", 
+        ansChoices: ["A1", "A2", "A3", "A4"],
+        correctAnswer: "A4",
+    },
 ];
 
 let startBtn = document.getElementById('begin');
